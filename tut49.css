@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navigation-bar{
+    /* position: sticky; */
+    height: 52vh;
+}
+#navigation-bar::before{
+    content: "";
+    position: absolute;
+    background: url('bg2.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.78;
+}
+nav{
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    margin: 3px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 6px 12px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    padding: 1px 7px;
+    border-radius: 8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover{
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+nav #search{
+    margin: 9px 1px;
+    position: relative;
+    left: 510px;
+}
+nav #search input{
+    padding: 3px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+nav #search button{
+    padding: 3px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: rgb(246, 8, 8);
+    color: white;
+    cursor: pointer;
+}
+#navigation-bar h1{
+    color: rgb(116, 7, 97);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 100px;
+}
+#home{
+  
+
+}
+
+.about .box{
+    display: flex;
+}
+.about .box img{
+    border: 3px solid rgb(199, 28, 28);
+    display: block;
+    height: 300px;
+    margin: 4px 15px;
+    border-radius: 6px;
+}
+
+.about .box p{
+    text-align:start;
+    padding: 5px 12px;
+    font-size: 1.2rem;
+}
+
+.about .box p button{
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+#services{
+    background-color: burlywood;
+}
+#ourservices{
+    display: flex;
+   
+}
+#services .box{
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+    background-color: #f7f6f5;;
+    margin: 8px 14px;
+    padding: 12px;
+    border-radius: 9px;
+}
+#services .box img{
+    width: 234px;
+    margin: 12px auto;
+}
+#gallary{
+    margin: 12px;
+}
+#gallary .gallary{
+    display: flex;
+    flex-direction: row;
+  
+}
+    
+.gallary .box img{
+    width: 350px;
+    border: 2px solid brown;
+    margin: 14px 17px;
+    padding: 23px;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact{
+    background-color: wheat;
+}
+
+#contact .getintouch{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.form-input label{
+    font-size: 1.4rem;
+}
+.form-input input{
+    width: 50%;
+    font-size: 1.4rem;
+    margin: 12px 23px;
+}
+.form-input textarea{
+    width: 50%;
+    font-size: 1.4rem;
+}
+.form-input button{
+    color: white;
+    background-color: blue;
+    font-size: 1.1rem;
+    padding: 3px 6px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 8px;
+}
+/* utils */
+.h-primary{
+    font-size: 2rem;
+    text-align: center;
+}
+.h-secondary{
+    font-size: 1.3rem;
+    text-align: center;
+}

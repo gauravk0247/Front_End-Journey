@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imonsar Technology</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            color: white;
+        }
+        .navigation ul{
+            display: flex;
+        }
+        .navigation ul li{
+            list-style: none;
+            margin: 12px 14px;
+        }
+        .navigation ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            padding: 2px 8px;
+            border-radius: 9px;
+        }
+        .navigation ul li a:hover{
+            background-color: rgb(126, 235, 25);
+            color: rgb(235, 150, 13);
+        }
+        .container{
+           text-align: center;
+           height: 233px;
+           margin-top: 123px;
+        }
+        h1{
+            color: white;
+            font-size: 2rem;
+        }
+        p{
+            color: white;
+        }
+        .container::before{
+            content: "";
+            position: absolute;
+            background: url('bg.jpg') no-repeat center center/cover;
+            top: 0px;
+            left: 0px;
+            height: 60%;
+            width: 100%;
+            z-index: -2;
+            opacity: 0.79;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h1>"Welcome to Imonsar Technology."</h1>
+        <p>We design create analyse and develop all type of software and web services.</p>
+    </section>
+
+    <section class="about">
+        <h2>About</h2>
+    </section>
+</body>
+</html>

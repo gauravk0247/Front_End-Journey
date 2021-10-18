@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    background-color: black;
+}
+nav{
+    display: flex;
+}
+nav #logo h1{
+    margin: 8px 23px;
+    color: white;
+    font-size: 2rem;
+
+}
+nav ul{
+    display: flex;
+    margin: 12px;
+}
+
+nav ul li{
+    padding: 5px 23px;
+    list-style: none;
+}
+
+nav ul li a{
+    pad: 2px 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+nav ul li a:hover{
+    color: orange;
+}
+.search{
+    margin: 15px 0px;
+    margin-left: 330px;
+   
+
+}
+.search input{
+    padding: 5px ;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.button-btn{
+    margin: 15px 3px;
+}
+.button-btn button{
+    padding: 5px;
+    font-size: 1rem;
+}
+main #home{}
+
+main #home .h-primary{
+    color: white;
+    text-align: center;
+}
+main #home .center{
+    text-align: center;
+    color: white;
+}
+main #home::before{
+    content: "";
+    position: absolute;
+    background: url('bg.jpg') center center/cover;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}

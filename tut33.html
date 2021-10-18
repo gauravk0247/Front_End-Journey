@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom variables</title>
+    <style>
+        :root {
+            --primary-color: rgb(60, 235, 26);
+            --danger-color: rgb(248, 217, 42);
+            --maxw:333px;
+        }
+
+        .container {
+            display: flex;
+            margin: auto;
+            background-color: var(--danger-color);
+            align-items: center;
+            justify-content: center;
+            background-color: var{var(--primary-color)};
+        }
+
+        .box {
+            /* --box-color:yellow; */
+            height: 200px;
+            width: 200px;
+            background-color: var(--primary-color);
+            border: 2px solid red;
+            margin: 2px 12px;
+            box-shadow: -3px -3px var(--primary-color);
+        }
+        .box h1{
+            text-shadow: 3px 3px var(--danger-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h1>Imonsar</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maxime itecto obcaecati exercitationem ducimus? Commodi, pariatur.</p>
+        </div>
+        <div class="box" id="box-2">box2</div>
+        <div class="box" id="box-3">box3</div>
+        <div class="box" id="box-4">box4</div>
+    </div>
+</body>
+
+</html>

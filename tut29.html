@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selector</title>
+    <style>
+        h1{
+            background-color: red;
+            color: white;
+            font-weight:bold;
+            text-align: center;
+        }
+
+        /* div li p{
+            color: orangered;
+            background-color: greenyellow;
+            font-weight: bold;
+        } */
+
+        /* div > p{
+            color: hotpink;
+            background-color: turquoise;
+        } */
+
+        div + p{
+            color: black;
+            background-color: crimson;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is on more selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>this is another li paragraph.</p></li>
+                <li><p>this is another li paragraph.</p></li>
+            </ul>
+            <p>This is a pragraph.</p>
+        </div>
+        <p>This is a another paragrapg.</p>
+    </div>
+    <p>inside the paragraph.</p>
+</body>
+</html>
